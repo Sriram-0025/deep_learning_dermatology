@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 import os
 
 # Load the model from Google Drive
-model_path = '/saved_model/my_model.h5'
+model_path = '/saved_model/my_model.keras'
 if os.path.exists(model_path):
     loaded_model = load_model(model_path)
 else:
