@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 import os
 
 # Load the model from Google Drive
-model_path = '/content/drive/MyDrive/DEEP LEARNING/saved_model/my_model.h5'
+model_path = '/saved_model/my_model.h5'
 if os.path.exists(model_path):
     loaded_model = load_model(model_path)
 else:
@@ -15,7 +15,7 @@ else:
     st.stop()
 
 # Load the dataset for scaling
-data_path = '/content/drive/MyDrive/DEEP LEARNING/data_cleaned_dermatology.csv'
+data_path = 'data_cleaned_dermatology.csv'
 if os.path.exists(data_path):
     data = pd.read_csv(data_path)
 else:
